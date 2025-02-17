@@ -8,4 +8,4 @@ services:
       - ./app:/var/www/html/app
       - ./config/dev/virtualhost/fernangus-mantenimiento.dev.com.conf:/etc/apache2/sites-enabled/fernangus-mantenimiento.dev.com.conf
     ports:
-      - "8080:80"
+      - "8082:80"
