@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build: .
+    container_name: fernangus-mantenimiento
+    volumes:
+      - ./app:/var/www/html/app
+      - ./config/prod/virtualhost/fernangus-films.chickenkiller.com.conf:/etc/apache2/sites-enabled/fernangus-films.chickenkiller.com.conf
+    ports:
+      - "80:80"
+    restart: always  # Se inicia automáticamente en producción
